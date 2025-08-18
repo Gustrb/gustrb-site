@@ -23,6 +23,9 @@ func main() {
 func serveTemplate(w http.ResponseWriter, r *http.Request) {
 	lp := filepath.Join("templates", "layout.html")
 	fp := filepath.Join("templates", filepath.Clean(r.URL.Path))
+	if fp == "" {
+		fp = filepath.Join("templates", "index.html")
+	}
 
 	tmpl, err := template.ParseFiles(lp, fp)
 	if err != nil {
