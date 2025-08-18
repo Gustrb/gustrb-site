@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <title>gustrb.xyz - Roots Toolchain</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="/">gustrb.xyz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/pages/projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-3">Roots Toolchain</h1>
+            <p class="fs-4 opacity-75 mb-4">Building <b>everything</b> from scratch - a journey into the fundamentals of computing</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://github.com/Gustrb/roots-toolchain" class="btn btn-light btn-lg" target="_blank">
+                    <i class="fab fa-github me-2"></i>View on GitHub
+                </a>
+                <button class="btn btn-success btn-lg">Active Development</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-4">Project Vision</h2>
+                    <p class="lead text-center mb-5">
+                        This is a fun side-project where I want to build <strong>everything</strong> from scratch. 
+                        From version control to operating systems, I'm creating a complete development ecosystem.
+                    </p>
+                    
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center p-4">
+                                    <i class="fas fa-rocket fs-1 text-primary mb-3"></i>
+                                    <h5 class="card-title">Learning Experience</h5>
+                                    <p class="card-text text-muted">A deep dive into the fundamentals of computing and software development.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center p-4">
+                                    <i class="fas fa-cogs fs-1 text-success mb-3"></i>
+                                    <h5 class="card-title">Complete Ecosystem</h5>
+                                    <p class="card-text text-muted">Building interconnected tools that work together seamlessly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Components -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Current Components</h2>
+            <div class="row g-4">
+                <!-- Athena Compiler -->
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm component-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-code fs-2 text-primary me-3"></i>
+                                <h5 class="card-title mb-0">Athena</h5>
+                            </div>
+                            <p class="card-text text-muted mb-3">The C compiler - the foundation of the entire toolchain. This will be used to compile all subsequent projects.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning">Work in Progress</span>
+                                <span class="badge bg-info ms-2">C Compiler</span>
+                            </div>
+                            <a href="https://github.com/Gustrb/roots-toolchain/tree/main/athena" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <i class="fab fa-github me-1"></i>View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Iris Tokenizer -->
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm component-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-cut fs-2 text-success me-3"></i>
+                                <h5 class="card-title mb-0">Iris</h5>
+                            </div>
+                            <p class="card-text text-muted mb-3">The C lexer/tokenizer that will be used by the compiler, formatter, parser, and linters.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning">Work in Progress</span>
+                                <span class="badge bg-success ms-2">Lexer</span>
+                            </div>
+                            <a href="https://github.com/Gustrb/roots-toolchain/tree/main/iris" class="btn btn-outline-success btn-sm" target="_blank">
+                                <i class="fab fa-github me-1"></i>View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bletchley Token Explorer -->
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm component-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-search fs-2 text-info me-3"></i>
+                                <h5 class="card-title mb-0">Bletchley</h5>
+                            </div>
+                            <p class="card-text text-muted mb-3">Token explorer and debugging tool for analyzing the output of the Iris tokenizer.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-success">Available</span>
+                                <span class="badge bg-info ms-2">Debug Tool</span>
+                            </div>
+                            <a href="https://github.com/Gustrb/roots-toolchain/tree/main/bletchley" class="btn btn-outline-info btn-sm" target="_blank">
+                                <i class="fab fa-github me-1"></i>View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Goals -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Future Goals</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <i class="fas fa-git-alt fs-1 text-primary mb-3"></i>
+                        <h6>Version Control System</h6>
+                        <p class="text-muted small">Building my own VCS to replace git</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <i class="fas fa-tasks fs-1 text-success mb-3"></i>
+                        <h6>Project Management</h6>
+                        <p class="text-muted small">System for managing projects, issues, and tasks</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <i class="fas fa-edit fs-1 text-warning mb-3"></i>
+                        <h6>Text Editor</h6>
+                        <p class="text-muted small">Custom editor to build all other projects</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <i class="fas fa-desktop fs-1 text-danger mb-3"></i>
+                        <h6>Operating System</h6>
+                        <p class="text-muted small">Complete OS that can run on actual hardware</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Philosophy -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4">Project Philosophy</h2>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <blockquote class="blockquote mb-0">
+                                <p class="mb-3">
+                                    "This is a fun side project I want to start working on. I don't really care about contributions, 
+                                    so if any is made I will take into consideration if I want to keep it or not. Don't expect to use this code, 
+                                    it is going to be mostly shit, I don't care, this one is a challenge for myself, not a commercial project."
+                                </p>
+                                <footer class="blockquote-footer">From the <a href="https://github.com/Gustrb/roots-toolchain" target="_blank">GitHub README</a></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Gustavo Reis Bauer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        .component-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        
+        .component-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+        }
+        
+        .component-card .btn {
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .component-card:hover .btn {
+            transform: scale(1.05);
+        }
+        
+        .blockquote {
+            font-style: italic;
+        }
+        
+        .blockquote-footer {
+            font-size: 0.9rem;
+        }
+    </style>
+</body>
+</html>
